@@ -36,7 +36,6 @@ function findDup(array) {
   copiedArray.sort((a, b) => a - b );
   copiedArray.forEach((elem, index) => {
     for (let idx = index + 1; idx < array.length; idx += 1) {
-      console.log(`comparing ${elem} with ${copiedArray[idx]}`);
       if (elem === copiedArray[idx]) duplicate = elem;
     }
   });
